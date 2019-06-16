@@ -1,6 +1,6 @@
 (ns sthenos.hercules.domain.validations)
 
-(def min-lengths {:exercise/name 3})
+(def min-lengths {:exercise/description 3})
 
-(defn min-length? [attribute-name]
-  #(>= (count %) (attribute-name min-lengths)))
+(defn min-length? [attribute]
+  #(>= (count %) (attribute min-lengths)))
