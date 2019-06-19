@@ -3,4 +3,4 @@
 (def min-lengths {:exercise/description 3})
 
 (defn min-length? [attribute]
-  #(>= (count %) (attribute min-lengths)))
+  #(>= (count %) (min-lengths attribute)))

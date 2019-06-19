@@ -19,10 +19,10 @@
                 (or :exercise/reps :exercise/duration)]))
 
 (def burpee-example-movement
-  {:exercise/name        :burpee
-   :exercise/description "Burpees"
-   :exercise/reps        20
-   :exercise/type        :total-body
-   :exercise/difficulty  :intermediate
-   :exercise/variants    {:beginner :sprawl
-                          :advanced :burpee-jump}})
+  #:exercise {:name        :burpee
+              :description "Burpees"
+              :reps        20
+              :type        :total-body
+              :difficulty  :intermediate
+              :variants    {:beginner :sprawl
+                            :advanced :burpee-jump}})
