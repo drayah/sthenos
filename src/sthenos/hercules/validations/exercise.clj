@@ -1,4 +1,4 @@
-(ns sthenos.hercules.domain.validations)
+(ns sthenos.hercules.validations.exercise)
 
 (def min-lengths {:exercise/description 3})
 

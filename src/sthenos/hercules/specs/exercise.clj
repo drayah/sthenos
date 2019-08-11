@@ -1,6 +1,6 @@
-(ns sthenos.hercules.domain.exercise
+(ns sthenos.hercules.specs.exercise
   (:require [clojure.spec.alpha :as s]
-            [sthenos.hercules.domain.validations :as domain.validations]))
+            [sthenos.hercules.validations.exercise :as validations.exercise]))
 
 (s/def :exercise/name #{:burpee
                         :burpee-jump
@@ -8,7 +8,7 @@
                         :squat})
 
 (s/def :exercise/description
-  (s/and string? (domain.validations/min-length? :exercise/description)))
+  (s/and string? (validations.exercise/min-length? :exercise/description)))
 
 (s/def :exercise/movement
   (s/keys :req [:exercise/name
